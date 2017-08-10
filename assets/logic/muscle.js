@@ -1,0 +1,1 @@
+var thePower = 0;
