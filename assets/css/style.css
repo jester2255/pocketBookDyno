@@ -1,3 +1,44 @@
 body{
 	background-color: lightblue;
+
+}
+#jumbotron{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	text-align: center;
+}
+#signIn{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	text-align: center;
+}
+#menueContainer{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	margin-top: 100px;
+}
+
+#button{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#dragster{
+	width: 200px;
+}
+#caluclate{
+	width: 200px;
+}
+#assembly{
+	width: 200px;
 }
