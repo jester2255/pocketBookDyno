@@ -1,19 +1,16 @@
+/*-------------------------------------------global style--------------------------------------------------*/
 body{
 	background-color: lightblue;
 
 }
-#jumbotron{
-	border-style: solid;
-	border-width: 2px;
+.jumbotron{
+	border: solid 2px;
 	border-radius: 5px;
 	border-color: black;
 	text-align: center;
 }
+/*--------------------------------------------login style------------------------------------------------*/
 #signIn{
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 5px;
-	border-color: black;
 	text-align: center;
 }
 #login{
@@ -21,16 +18,14 @@ body{
 }
 /*---------------------------------------------menu css-----------------------------------------------------*/
 #menueContainer{
-	border-style: solid;
-	border-width: 2px;
+	border: solid 2px;
 	border-radius: 5px;
 	border-color: black;
 	margin-top: 100px;
 }
 
 #button{
-	border-style: solid;
-	border-width: 2px;
+	border: solid 2px;
 	border-radius: 5px;
 	border-color: black;
 	margin-top: 10px;
@@ -46,4 +41,39 @@ body{
 #assembly{
 	width: 200px;
 }
-/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------drag style----------------------------------------------------*/
+#drag{
+	
+	/*color: white;*/
+}
+#here{
+	position: absolute;
+	top: 400px;
+	left: 0;
+	width: 100%;
+}
+#burnout{
+	position: relative;
+	/*z-index: -1;*/
+	width: 1000px;
+	height: 400px;
+}
+#mile14{
+	text-align: center;
+	/*border: solid 2px;
+	border-radius: 5px;
+	border-color: black;*/
+	margin-right: 30px; 
+	margin-left: 60px;
+}
+#mile18{
+	text-align: center;
+	/*border: solid 2px;
+	border-radius: 5px;
+	border-color: black;*/
+	margin-left: 30px;
+}
+#answer{
+	margin-top: 100px;
+	text-align: center;
+}
