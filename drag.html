@@ -6,38 +6,78 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title></title>
+	<title>Drag Racing Calculations</title>
 </head>
 <body>
-	<div class="container">
-		<div id="drag" class="jumbotron">
-			<span class="here"><h1>How fast is fast??!!</h1></span>
-			<img id="burnout" src="img/burnout.jpg">
-		</div>
+<div class="container">
+	  <div id="drag" class="jumbotron">
+		  <h1 class="here">How fast is fast??!!</h1>
+	  </div>
 		<div class="row">
 			<div id="mile14" class="col-md-5">
-				<h3>1/4 mile E.T. calculator</h3>
+				<h3>1/4 mile ET calculator</h3>
 				<form id="theForm" value= "Reset form">
 					1/8 mile ET: <input id="theOne" type="number" name="14mileET" value=""><br>
 					<div id="14mile" type="button" class="btn btn-default">Submit</div>
 				</form>
 			</div>
 			<div id="mile18" class="col-md-5">
-				<h3>1/8 mile E.T. calculator</h3>
+				<h3>1/8 mile ET calculator</h3>
 				<form id="otherForm" value= "Reset form">
 					1/4 mile ET: <input id="theOther" type="number" name="18mileET" value=""><br>
 					<div id="18mile" type="button" class="btn btn-default">Submit</div>
 				</form>
 			</div>
-			<div id="answer" class= "col-md-12">
-				
-			</div>
 		</div>
+		<div class="row">
+		  <div id="horsePower" class=col-md-5>
+			<h3>Horse power calculated from E.T. and Weight</h3>
+			<form id=thirdForm value="Reset form">
+				1/4 mile ET: <input id= time type="number" name="theET" value=""><br>
+				Weight of car: <input id= weight1 type="number" name="pounds" value="">
+			</form>
+			<div id="HP" type="button" class="btn btn-default">Submit</div>
+		  </div>
+		  <div id="morePower" class=col-md-5>
+			<h3>Horse power calculated from MPH and Weight</h3>
+			<form id=thirdForm value="Reset form">
+				MPH: <input id= mph type="number" name="MPH" value=""><br>
+				Weight of car: <input id = weight2 type="number" name="pounds" value="">
+			</form>
+			<div id="HP2" type="button" class="btn btn-default">Submit</div>	
+		  </div>
+		</div>
+	<div class= "row">
+	  <div id= "ET1-4" class =col-md-5>
+		<h3>1/4 mile ET calculated from HP and Weight</h3>
+		  <form id=forthForm value="Reset form">
+			Horse Power: <input id= HrPw type="number" name="HrPw" value=""><br>
+			Weight of car: <input id = weight3 type="number" name="pounds" value="">
+		  </form>
+		  <div id="ET14" type="button" class="btn btn-default">Submit</div>
+	  </div>
+	  <div id= "MPH1-4" class =col-md-5>
+	    <h3>1/4 mile MPH calculated from HP and Weight</h3>
+	      <form id=fifhtForm value="Reset form">
+			Horse Power: <input id= HrPw1 type="number" name="HrPw" value=""><br>
+			Weight of car: <input id = weight4 type="number" name="pounds" value="">
+		  </form>
+		  <div id="MPH14" type="button" class="btn btn-default">Submit</div>
+	  </div>
+	  <div id="answer" class= "col-md-12">	
+	  </div>
 	</div>
+</div>
+<footer id="bottom">
+	<h5>*Disclamer*</h5>
+	<h5>These calculations are for entertainment purposes only. </h5>
+	<h5>These calculations are not 100% accurate but may be close.</h5>
+	<h5>There are other factors that can effect the actual MPH, ET's, and HP.</h5>	
+</footer>
+
 	<script type="text/javascript"></script>
 	<script type="text/javascript" src= "assets/logic/jquery_3.2.1.js"></script>
 	<script type="text/javascript" src= "assets/logic/jquery_3.2.1.min.js"></script>
-	
 	<script type="text/javascript" src= "assets/logic/drag.js"></script>
 </body>
 </html>

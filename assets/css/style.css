@@ -1,13 +1,41 @@
 /*-------------------------------------------global style--------------------------------------------------*/
 body{
-	background-color: lightblue;
+	
+	background:
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+		background-color: #131313;
+		background-size: 20px 20px;
 
 }
+h3{
+	color: white;
+}
+input{
+	color: black;
+}
+/*form{
+	color: white;
+}*/
 .jumbotron{
-	border: solid 2px;
+	text-align: center;
+	background:
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+		background-color: #131313;
+		background-size: 20px 20px;
+	/*border: solid 2px;
 	border-radius: 5px;
 	border-color: black;
-	text-align: center;
+	text-align: center;*/
 }
 /*--------------------------------------------login style------------------------------------------------*/
 #signIn{
@@ -43,37 +71,65 @@ body{
 }
 /*--------------------------------------------drag style----------------------------------------------------*/
 #drag{
-	
-	/*color: white;*/
+	color: white;
+	margin: 0;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
-#here{
-	position: absolute;
+#here{/*this is the text*/
+
+ 	text-align: center;
+	position: relative;
 	top: 400px;
 	left: 0;
 	width: 100%;
 }
-#burnout{
-	position: relative;
-	/*z-index: -1;*/
-	width: 1000px;
-	height: 400px;
-}
+
 #mile14{
+	color: white;
 	text-align: center;
-	/*border: solid 2px;
-	border-radius: 5px;
-	border-color: black;*/
 	margin-right: 30px; 
 	margin-left: 60px;
 }
 #mile18{
+	color: white;
 	text-align: center;
-	/*border: solid 2px;
-	border-radius: 5px;
-	border-color: black;*/
+	margin-left: 30px;
+}
+
+#horsePower{
+	color: white;
+	text-align: center;
+	margin-right: 30px; 
+	margin-left: 60px;
+}
+#morePower{
+	color: white;
+	text-align: center;
+	margin-left: 30px;
+}
+#ET1-4{
+	color: white;
+	text-align: center;
+	margin-right: 30px; 
+	margin-left: 60px;
+}
+#MPH1-4{
+	color: white;
+	text-align: center;
 	margin-left: 30px;
 }
 #answer{
+	color: white;
 	margin-top: 100px;
 	text-align: center;
+}
+#bottom{
+	color: white;
+	text-align: center;
+}
+/*-------------------------------------BuildSheets------------------------------------------*/
+
+#buildHead{
+	color: white;
 }
