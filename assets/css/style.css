@@ -23,6 +23,7 @@ input{
 }*/
 .jumbotron{
 	text-align: center;
+	color: white;
 	background:
 		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
 		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -77,7 +78,6 @@ input{
 	padding-top: 0px;
 }
 #here{/*this is the text*/
-
  	text-align: center;
 	position: relative;
 	top: 400px;
@@ -86,35 +86,41 @@ input{
 }
 
 #mile14{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-right: 30px; 
 	margin-left: 60px;
 }
 #mile18{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-left: 30px;
 }
 
 #horsePower{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-right: 30px; 
 	margin-left: 60px;
 }
 #morePower{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-left: 30px;
 }
 #ET1-4{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-right: 30px; 
 	margin-left: 60px;
 }
 #MPH1-4{
+	position: relative;
 	color: white;
 	text-align: center;
 	margin-left: 30px;
@@ -128,8 +134,33 @@ input{
 	color: white;
 	text-align: center;
 }
+#theForm{
+	position: relative;
+}
+#otherForm{
+	position: relative;
+}
+#thirdForm{
+	position: relative;
+}
+#forthForm{
+	position: relative;
+}
+#fifthForm{
+	position: relative;
+}
+#sixthForm{
+	position: relative;
+}
 /*-------------------------------------BuildSheets------------------------------------------*/
 
 #buildHead{
+	color: white;
+}
+/*-------------------------------------calculation style------------------------------------*/
+#firstForm{
+	color: white;
+}
+#secondForm{
 	color: white;
 }

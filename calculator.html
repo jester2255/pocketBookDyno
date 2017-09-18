@@ -2,9 +2,62 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Calculate Engine Stuff</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+ <div class= container>
+	<div class="jumbotron">
+		<h1>Calculating Engine Stuff</h1>
+	</div>
+	 <div class="row">
+	  <div id="div1" class="col-md-5">
+		<h3> Formulas for displacement and cylinder volume  </h3>
+	  </div>
+		  <div class="col-md-5">
+		    <select id="info">
+  			  <option value="1">Cubic inches</option>
+ 			  <option value="2">Metric </option>
+ 			</select>
+			<form id="secondForm" value= "Reset form">
+				<!-- need to figure out how to make it metric or in ci -->				
+				<input id="bore" type="number" name="hole" value=""> Bore of the cylinder<br>
+				<input id="stroke" type="number" name="length" value=""> Stroke of the engine <br>
+				<input id="numCyl" type="number" name="cylNum" value=""> Number of cylinders<br>
+				<div id="disp" type="button" class="btn btn-default">Submit</div>
+			</form>
+		  </div>
+		</div>
 
+	  <div class="row">
+		<div id="div2" class="col-md-12">
+			<h3> Formulas for compression ratio </h3>
+		</div>
+	  </div>
+
+	<div class= "row">
+	  <div id="div3" class="col-md-5">
+	  	<h3>Formulas for Calculating Carburetors CFM</h3>
+	  </div>
+	  	<div class="col-md-5">
+	  	  <form id="firstForm" value= "Reset form">
+			<input id="cid" type="number" name="engSiz" value=""> Engine size in cubic inches<br>
+			<input id="rpm" type="number" name="round" value=""> Engine maximum RPM <br>
+			<div id="carb" type="button" class="btn btn-default">Submit</div>
+		  </form>
+	  	</div>
+	  </div>
+	    <div class="row"><!--begining of row-->
+	  	  <div id="answer" class= "col-md-12"></div>
+	  	</div><!--ending of row-->
+ </div>
+
+	<script type="text/javascript"></script>
+	<script type="text/javascript" src= "assets/logic/jquery_3.2.1.js"></script>
+	<script type="text/javascript" src= "assets/logic/jquery_3.2.1.min.js"></script>
+	<script type="text/javascript" src= "assets/logic/enginecal.js"></script>
 </body>
 </html>

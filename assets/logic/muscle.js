@@ -1,20 +1,6 @@
 //----------------------formulas for math
 /*
-Formulas for Calculating Carburetors CFM 
-	Engine size (cid) x maximum RPM / 3456 = CMF CMF @ 100% Volumetric efficiency
-	(example: 250 CID x 6000RPM = 2,100,000 / 3456 = 608 CMF)
-
 Formulas for Calculating Performance
-	Convert between 1/4 mile and 1/8 mile ET's
-	   1/4 mile ET = 1/8 mile ET x 1.5832 (thanks to Bobby Mosher for this formula)
-	   1/8 mile ET = 1/4 mile ET / 1.5832 (thanks to Bobby Mosher for this formula)
-	Calculate 1/4 mile ET and MPH from HP and Weight
-	   ET = ((Weight / HP)^.333) * 5.825
-	   MPH = ((HP / Weight)^.333) * 234
-	Calculate HP From ET and Weight
-	   HP = (Weight / ((ET/5.825)^3))
-	Calculate HP From MPH and Weight
-	   HP = (((MPH / 234)^3) * Weight)
 Formulas for displacement, bore and stroke 
 	pi/4 = 0.7853982 
 	cylinder volume = pi/4 x bore^2 x stroke 
@@ -79,7 +65,7 @@ Formulas for center of gravity
 	cg height = [ level wheelbase x raised wheelbase x added weight on scale / distance raised ] x overall weight
 */
 //--------------------------constant vaiables----------------------------
-var PI = 3.1415927
+const PI = 3.1415927
 //--------------------------other variables-----------------------------
 var test = 5
 var test1
