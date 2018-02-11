@@ -164,3 +164,7 @@ input{
 #secondForm{
 	color: white;
 }
+
+#answer{
+	margin-bottom: 60px;
+}
