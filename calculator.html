@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calculate Engine Stuff</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculate Engine Stuff</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
  <div class= container>
@@ -50,9 +50,30 @@
 		  </form>
 	  	</div>
 	  </div>
+<br>
+
+	<div class= "row">
+	  <div id="div3" class="col-md-5">
+	  	<h3>Formulas for Calculating Torque</h3>
+	  </div>
+	  	<div class="col-md-5">
+	  	  <form id="thirdForm" value= "Reset form">
+					<input id="hrspwr" type="number" name="hrspwr" value=""> Engines horsepower<br>
+					<input id="rpms" type="number" name="rotate" value=""> Engine maximum RPM <br>
+					<div id="torque" type="button" class="btn btn-default">Submit</div>
+				</form>
+	  	</div>
+	  </div>
+<!--Formulas for brake horsepower 
+			torque = 5252 x horsepower / rpm 
+			horsepower = rpm x torque / 5252 
+			brake specific fuel consumption = fuel pounds per hour / brake horsepower 
+			bhp loss = elevation in feet / 1000 x 0.03 x bhp at sea level	 -->
+
 	    <div class="row"><!--begining of row-->
 	  	  <div id="answer" class= "col-md-12"></div>
 	  	</div><!--ending of row-->
+	  
  </div>
 
 	<script type="text/javascript"></script>

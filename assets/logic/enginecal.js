@@ -1,15 +1,6 @@
 const PI = 3.1415927
-//--------------------------------carb size calculation-----------------------------------------
-$("#carb").on("click", function(){
-	var cid = document.getElementById("cid").value
-	var rpm = document.getElementById("rpm").value
-	document.getElementById("firstForm").reset();
-	var crbCFM = ((cid * rpm) / 3456)
-	console.log(crbCFM);
-		var newCarb = crbCFM.toFixed(0)
-	$("#answer").html("<h3>The ideal carburator for your engine would be " + newCarb +" CFM</h3>")
-});	
-//-------------------------------engine displacement and cylinder volume--------------------------
+
+//-------------------------------engine displacement--------------------------------------------
 	$("#disp").on("click", function(){
 	var val = document.getElementById("info")
 	var strUser = val.options[val.selectedIndex].value;
@@ -17,7 +8,7 @@ $("#carb").on("click", function(){
 
 
 	if(strUser === "1") {
-		console.log("here I am")
+		//console.log("here I am")
 		cubicInches()
 	}else if(strUser === "2"){
 		metric()
@@ -67,6 +58,26 @@ function metric(){
 	console.log("The cylinder volume is " + newCylVol)
 
 	$("#answer").html("<h3>The engines displacement is " + newDisp +
-		" liters</h3>"+"<br>"+"<h3>The cylinder volume is "+ newCylVol+" liters</h3>")
-		
+		" liters</h3>"+"<br>"+"<h3>The cylinder volume is "+ newCylVol+" liters</h3>")	
   }
+//--------------------------------carb size calculation-----------------------------------------
+	$("#carb").on("click", function(){
+		var cid = document.getElementById("cid").value
+		var rpm = document.getElementById("rpm").value
+		document.getElementById("firstForm").reset();
+		var crbCFM = ((cid * rpm) / 3456)
+		console.log(crbCFM);
+			var newCarb = crbCFM.toFixed(0)
+		$("#answer").html("<h3>The ideal carburator for your engine would be " + newCarb +" CFM</h3>")
+	});	
+//------------------------------Torque calculation------------------------------------------
+	//torque = 5252 x horsepower / rpm 
+	$("#torque").on("click", function(){
+		var hrspwr = document.getElementById("hrspwr").value
+		var rpms = document.getElementById("rpms").value
+		document.getElementById("thirdForm").reset();
+		var torque = ((5252*hrspwr)/rpms);
+		console.log(torque);
+		var trq = torque.toFixed(0)
+		$("#answer").html("<h3>Your engine torque is "+ trq +" ftlb</h3>")
+	});

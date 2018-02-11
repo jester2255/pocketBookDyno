@@ -31,10 +31,12 @@ Formulas for air capacity & volumetric efficiency
 	theoretical cfm = rpm x displacement / 3456 
 	volumetric efficiency = acutal cfm / theoretical cfm x 100 
 	street carb cfm = rpm x displacement / 3456 x 0.85 
-	racin carb cfm = rpm x displacement / 3456 x 1.1 
+	racin carb cfm = rpm x displacement / 3456 x 1.1
+--------------------------------------------------------------------------------------------------	 
 Formulas for tire size & their effect 
 	effective ratio = (old tire diameter / new tire diameter) x original ratio 
 	actual mph = (new tire diameter / old tire diameter) x actual mph 
+--------------------------------------------------------------------------------------------------
 Formulas for g force & weight transfer 
 	drive wheel torque = flywheel torque x first gear x final drive x 0.85 
 	wheel thrust = drive wheel torque / rolling radius 
