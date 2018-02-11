@@ -149,10 +149,12 @@ a{
 }
 #answer{
 	color: white;
-	margin-top: 100px;
+	margin-top: 20px;
+	margin-bottom: 0px;S
 	text-align: center;
 }
 #bottom{
+	margin-top: 0;
 	color: white;
 	text-align: center;
 }
