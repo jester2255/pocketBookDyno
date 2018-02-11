@@ -191,7 +191,10 @@ a{
 #thirdForm{
 	color: white;
 }
-
 #answer{
 	margin-bottom: 60px;
+}
+#MTC{
+	text-align: center;
+	color: white;
 }
